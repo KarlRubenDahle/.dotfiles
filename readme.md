@@ -7,6 +7,7 @@ Sist testet med premiere 25.2.1
 
 
 ### Kjør .macos som script:
+Sist testet med seuqoia 15.5
 Kall filen for eksempel "setup-macos.sh"
 kjør dette i terminal:
 ```
