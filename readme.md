@@ -9,8 +9,7 @@ cmd+shift+piler for å navigere mellom vinduer
 ### Kjør .macos som script:
 Sist testet med seuqoia 15.5.
 
-Kall filen "setup-macos.sh"
-kjør dette i terminal:
+Kall filen "setup-macos.sh" og kjør dette i terminal:
 ```
 chmod +x setup-macos.sh
 ./setup-macos.sh
