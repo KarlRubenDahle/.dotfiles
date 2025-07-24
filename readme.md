@@ -5,7 +5,7 @@ Setup for nye macer og premiere-snarveier.
 ### Premiere
 Sist testet med premiere 25.2.1
 
-cmd+shift+piler for å navigere mellom vinduer
+option+shift+piler for å navigere mellom vinduer
 
 ### Kjør .macos som script:
 Sist testet med seuqoia 15.5.
