@@ -1,13 +1,19 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# instillinger for mac os. kopier en og en og kjør i terminal
-# sist oppdatert for d  15.5
+# Innstillinger for macOS – personlig oppsett
+# sist oppdatert for macOS sequoia 15.5
+# Kommandoene kan kjøres én og én, eller som helhet
 
-# MANUELT: sett opp cmd+shoft+1 for å aktivere fargefiltre
+# MANUELT: sett opp cmd+shift+1 for å aktivere fargefiltre (Systemvalg > Tilgjengelighet > Snarveier)
+# MANUELT: Sett opp ctrl+scroll for zoom (Systemvalg > Tilgjengelighet > Snarveier)
+#        Skru evt. av bildeutjevning
 
-# Use scroll gesture with the Ctrl (^) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
@@ -50,3 +56,6 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 # Restart relevante prosesser
 killall Finder
 killall Dock
+killall SystemUIServer
+
+echo "✅ macOS-innstillinger er oppdatert!"
