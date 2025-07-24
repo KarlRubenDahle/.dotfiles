@@ -7,8 +7,9 @@ Sist testet med premiere 25.2.1
 cmd+shift+piler for å navigere mellom vinduer
 
 ### Kjør .macos som script:
-Sist testet med seuqoia 15.5
-Kall filen for eksempel "setup-macos.sh"
+Sist testet med seuqoia 15.5.
+
+Kall filen "setup-macos.sh"
 kjør dette i terminal:
 ```
 chmod +x setup-macos.sh
