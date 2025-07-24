@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # instillinger for mac os. kopier en og en og kjør i terminal
 # sist oppdatert for seuqoia 15.5
 
@@ -40,3 +42,7 @@ defaults write com.apple.TextEdit RichText -int 0
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+
+# Restart relevante prosesser
+killall Finder
+killall Dock
