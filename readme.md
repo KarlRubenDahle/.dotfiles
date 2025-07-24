@@ -10,8 +10,8 @@ option+shift+piler for å navigere mellom vinduer
 ### Kjør .macos som script:
 Sist testet med seuqoia 15.5.
 
-Kall filen "setup-macos.sh" og kjør dette i terminal:
+Legg "dotfiles" i brukermappen og kjør dette i terminal:
 ```
-chmod +x setup-macos.sh
-./setup-macos.sh
+cd dotfiles
+bash .macos
 ```
